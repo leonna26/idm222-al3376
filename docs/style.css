@@ -1,15 +1,9 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
- body
+body
  {
    margin: 0;
    padding: 0;
@@ -35,6 +29,7 @@
   background: #ffffff;
   color: #707070;
   font-family: "Sacramento", sans-serif;
+  font-size: 1.5rem;
  }
  
  #menuToggle
@@ -92,7 +87,8 @@
    margin-bottom: 5px;
    position: relative;
    
-   background: #29292b;
+   
+   background: #ffffff;
    border-radius: 3px;
    
    z-index: 1;
@@ -122,7 +118,7 @@
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background: #ffffff;
  }
  
  /*
@@ -153,8 +149,10 @@
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
+      font-family: "Roboto", sans-serif;
+
    
-   background: #ededed;
+   background: #7E6A81;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -182,23 +180,37 @@
 
  /* Style the header */
 .header {
-    padding: 40px 16px;
+    padding: 2.5rem 1.25rem;
     background: #7E6A81;
+    display: fixed;
+    margin-top: 0;
   }
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-  }
+
+.paragraph
+ {
+   margin: 1.75rem;
+   line-height: 1.25;
+   color: #707070;
+   font-family: "Roboto", sans-serif;
+   text-align: left;
+ }
+
+.image {
+  margin-top: 2.5rem;
+}  
+
+.link {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  text-align: right;
+  margin: 1.75rem;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  background-color: #7E6A81;
+  color: white;
+  text-align: center;
+}
