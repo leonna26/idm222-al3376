@@ -8,67 +8,62 @@
   <link rel="stylesheet" href="contact.css">
   <title>Leonna Design - Anna Leong</title>
   
-<header>
-  <!--    Made by Erik Terwan    -->
+ <!--    CODEPEN Made by Erik Terwan    -->
   <!--   24th of November 2015   -->
   <!--        MIT License        -->
-  <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-        
-        <!--
-        Some spans to act as a hamburger.
-        
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-            <li><a href="index.html">home</a></li>
-            <li><a href="./about.html">about</a></li>
-            <li><a href="./work.html">work</a></li>
-            <li><a href="./resume.html">resume</a></li>
-            <li><a href="./contact.html">contact</a></li>
-        </ul>
+  <body>
+      <div class="bar">
       </div>
-    </nav>
-    <div class="header" id="myHeader">
-    </div>
-    <h1>leonna design</h1> 
-  </header>
+      <!--    Made by Erik Terwan    -->
+    <!--   24th of November 2015   -->
+    <!--        MIT License        -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" />
+          <!--Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.-->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
+          <ul id="menu">
+            <a href="index.html"><li>home</li></a>
+            <a href="about.html"><li>about</li></a>
+            <a href="work.html"><li>work</li></a>
+            <a href="resume.html"><li>resume</li></a>
+            <a href="contact.html"><li>contact</li></a>
+          </ul>
+        </div>
+      </nav>
+      <header>
+          <div class="header">
+          </div>
+          <h1>leonna design</h1> 
+        </header>
+       <div class="title">
+         <h1>let's get in touch!</h1>
+       </div>
 
-<body>
+    <p>Interested in any of my work? Reach out to me and I would be thrilled to get connected.</p>
+
 <div class="form">
-    <h3>let's get in touch!</h3>
-    <p>Interested in any of my work? 
-    <br>Reach out to me using the form below and I would be thrilled to get connected.</p>
-    <div class="form-group">
-    <input type="text" class="form-control" value="" placeholder="name" id="contact-name" />
+   <div class="form-group">
+    <input type="text" class="form-control" value="" placeholder="Name" id="contact-name" />
     <label class="input-field-icon icon-user" for="login-name"></label>
 </div>
     
 <div class="form-group">
-    <input type="email" class="form-control" value="" placeholder="email" id="contact-email" />
+    <input type="email" class="form-control" value="" placeholder="Email" id="contact-email" />
     <label class="input-field-icon icon-email" for="login-email"></label>
 </div>
                 
 <div class="form-group">
-    <textarea class="form-control" value="" placeholder="message" id="contact-message" rows="1"></textarea>
+    <textarea class="form-control" value="" placeholder="Message" id="contact-message" rows="1"></textarea>
 </div>
     <button id="contact-send" class="btn btn-primary btn-lg btn-block">Send</button>
 </div>
-<div class="footer">
+<div class="bar">
 </div>
 </body>
 </html>
