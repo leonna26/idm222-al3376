@@ -2,7 +2,14 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   height: 100vh;
+  box-sizing: border-box;
 }
+
+*,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
 
 .bar {
   background-color:#7E6A81; /*MAIN THEME COLOR*/
@@ -224,6 +231,15 @@ html, body {
 figcaption {
   margin: -0.625rem;
 }
+.description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 20.5rem;
+  padding: 0rem 1rem 1rem;
+}
 
 .paragraph {
   text-align: left;
@@ -232,7 +248,7 @@ figcaption {
   line-height: 1.5;
   margin: 0 auto;
   max-width: 20.5rem;
-  padding: 0rem 1rem 1rem;
+  padding: 0rem;
 }
 
 @media (min-width:600px) {
@@ -252,3 +268,53 @@ figcaption {
   }
   }
 
+  #container {
+    width: 960px; margin: 0 auto;
+  }
+  
+  #content {
+	padding: 2px 69px 50px 69px; overflow: hidden;
+}
+	#content h2 {
+		font: 30px Avenir, Sans-Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+
+	#content h3 {
+		font: 26px Roboto, Sans-Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+	
+	#content p {
+		margin: 0 0 30px 0;
+	}
+	
+	#content a {
+		color: #8A5B91; text-decoration: none;
+	}
+		#content a:hover {
+			color: rgb(133, 81, 141);
+		}
+	
+#content .portfolio-item {
+    width: 182px; padding:6px; background: rgb(255, 255, 255); text-align: center;
+    border-color: #8A5B91;
+  float: left; margin: 0 7px 14px 7px;
+}
+	#content .portfolio-item p.btn {
+		margin: 0;
+	}
+	#content .portfolio-item p.btn a {
+		display: block; width: 183px; height: 46px; padding: 7px 0 0 0;
+		font-weight: bold; text-align: center; text-transform: uppercase;
+		text-decoration: none;
+    }
+    
+    .title {
+        font-family: 'PT Serif', serif;
+       }
+
+  .small-heading {
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }

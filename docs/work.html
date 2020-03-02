@@ -1,56 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="portfolio.css" type="text/css" media="screen" />
-  <title>Leonna Design - Portfolio</title>
-</head> 
-<header>
-    <div class="bar">
-    </div>
-  <!--    Made by Erik Terwan    -->
-  <!--   24th of November 2015   -->
-  <!--        MIT License        -->
-  <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-        
-        <!--
-        Some spans to act as a hamburger.
-        
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-            <li><a href="index.html">home</a></li>
-            <li><a href="./about.html">about</a></li>
-            <li><a href="./work.html">work</a></li>
-            <li><a href="./resume.html">resume</a></li>
-            <li><a href="./contact.html">contact</a></li>
-        </ul>
+  <title>Work | Leonna Design</title>
+  <body>
+      <div class="bar">
       </div>
-    </nav>
-    <div class="header" id="myHeader">
-    </div>
-    <h1>leonna design</h1> 
-  </header>
-<body>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="work.html"><li>Work</li></a>
+            <a href="resume.html"><li>Resume</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+      <header>
+          <div class="header">
+          </div>
+          <h1>leonna design</h1> 
+        </header>
       <div id="content">
       	<div class="title">
         <h1>my work...</h1>
@@ -60,8 +38,8 @@
     </div>
         
         <div class="portfolio-item">
-          <a href="#"><img src="../images/septa_home.jpg" alt="View more info" /></a>
-          <p class="btn"><a href="#">UX/UI Design</a></p>
+          <img src="../images/septa_home.jpg" alt="View more info" />
+          <p class="btn">UX/UI Design</p>
         </div>
         
         <div class="portfolio-item">
