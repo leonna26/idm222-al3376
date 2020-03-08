@@ -1,24 +1,377 @@
-.button {
-    background-color: #8A5B91; 
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  .button1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #8A5B91;
-  }
-  
-  .button1:hover {
-    background-color: rgb(109, 85, 112);
-    color: white;
-  }
-  
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+*,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+
+ body{
+  background-color: white;
+  margin:2%;
+}
+
+#topheader{
+  text-align: center;
+  background-color: #252525;
+  color: #ebebeb;
+  padding:10px;
+  border-bottom: 5px solid rgb(66, 35, 70);
+  margin-bottom: 25px;
+}
+
+h1{
+  background: #ffffff;
+  color: #585858;
+  font-family: "Sacramento", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.2em;
+  font-weight: 600;
+  /*background-color: #7E6A81;*/
+  /*border-bottom: 2px solid #7E6A81;*/
+  color:white;
+  padding:10px;
+  font-family: 'PT Serif', serif;
+  text-align: left;
+}
+
+.section{
+  width:70%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  float: left;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  text-align: left;
+  margin: 8px 10px;
+  padding: 8px 12px;
+
+}
+#description{
+  margin:0;
+  padding: 10px 10px 15px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#lorenipsum{
+  margin:0;
+  padding: 10px 10px 15px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+article .job{
+  color: #707070;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 12px 8px 8px 8px;
+  padding-bottom: 5px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  text-align: left;
+
+}
+
+article .date{
+  color: rgb(66, 35, 70);
+  margin:10px;
+  padding-bottom: 5px;
+  font-size: 1em;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  float: right;
+}
+
+.description{
+  color: #707070;
+  margin: 8px;
+  line-height: 1.3;
+  padding-bottom: 10px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding-left: 32px;
+  text-align: left;
+
+}
+
+#skills article {
+  line-height: 1.5;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#skills{
+  float:left;
+  width:22%;
+  background-color: #ffffff;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding-top: 15.5px;
+  margin: 8px 24px;
+  padding: 8px 28px;
+  text-align: left;
+}
+
+.skillsubheader{
+  color:#707070;
+  font-weight: 600;
+  padding-left:10px;
+  font-size:1em;
+  position: relative;
+  top:10px;
+  text-align: left;
+}
+
+.list{
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  text-align: left;
+  list-style-type: circle;
+  margin: 8px 24px;
+  padding: 8px 28px;
+}
+
+#education p{
+  padding:0;
+}
+
+#education .job{
+  margin-bottom: 0px;
+}
+
+#education .description{
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+#education .date{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+
+.bar {
+  /*background-color:#7E6A81; MAIN THEME COLOR*/
+  background-color: rgb(66, 35, 70); 
+  width: 100%;
+  height: 2.625rem;
+  margin: 0;
+}
+
+.bottombar {
+  /*background-color:#7E6A81; MAIN THEME COLOR*/
+  background-color: rgb(66, 35, 70); 
+  width: 100%;
+  height: 2.625rem;
+  margin: 0;
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+ 
+ .button {
+  background-color:  rgb(66, 35, 70); 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid  rgb(66, 35, 70);
+}
+
+.button1:hover {
+  background-color:  rgb(66, 35, 70);
+  color: white;
+}
+
+ 
+ .title {
+  font-family: 'PT Serif', serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 12px 2px;
+ }
+ 
+ body
+ {
+   margin: 8px 2px;
+   padding: 8px 2px;
+   background: #ffffff;
+   color: #707070;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+   text-align: center;
+ }
+
+ header 
+ {
+  background: #ffffff;
+  color: #585858;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 2px solid  rgb(66, 35, 70);
+
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 20px;
+   left: 20px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #585858;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: #7E6A81;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 0.25rem;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #3d3d3d;
+   border-radius: 0.1875rem;
+   
+   z-index: 1;
+   
+   transform-origin: 0.25rem 0;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-0.125rem, -0.0625rem);
+   background: #eeeeee;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -0.0625rem);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 18.75rem;
+   margin: -6.25rem 0 0 -3.125rem;
+   padding: 3.125rem;
+   padding-top: 7.8125rem;
+   
+   background:  rgb(66, 35, 70);
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 0.625rem 0;
+   font-size: 1.375rem;
+   color: #eeeeee;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }

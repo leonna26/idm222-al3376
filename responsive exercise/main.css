@@ -13,10 +13,11 @@
 
  /*.bar {
   background-color:#7E6A81; /*MAIN THEME COLOR*/
-/*width: 100%;
+  /*width: 100%;
   height: 2.625rem;
   margin: 0;
-}*/
+ }
+ */
 
 .button1 {
   background-color: white; 
@@ -33,12 +34,12 @@
   font-family: 'PT Serif', serif;
  }
 
- header 
- {
+ header {
   background: #ffffff;
   color: #585858;
-  font-family: "Sacramento", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
  }
 
 

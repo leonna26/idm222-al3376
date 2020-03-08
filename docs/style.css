@@ -12,14 +12,14 @@ html, body {
  }
 
 .bar {
-  background-color:#7E6A81; /*MAIN THEME COLOR*/
+  background-color:rgb(66, 35, 70); /*MAIN THEME COLOR*/
   width: 100%;
   height: 2.625rem;
   margin: 0;
 }
  
  .button {
-  background-color: #8A5B91; 
+  background-color: rgb(66, 35, 70); 
   border: none;
   color: white;
   padding: 16px 32px;
@@ -35,11 +35,11 @@ html, body {
 .button1 {
   background-color: white; 
   color: black; 
-  border: 2px solid #7E6A81;
+  border: 2px solid rgb(66, 35, 70);
 }
 
 .button1:hover {
-  background-color: rgb(109, 85, 112);
+  background-color: rgb(66, 35, 70);
   color: white;
 }
 
@@ -89,7 +89,7 @@ html, body {
  
  #menuToggle a:hover
  {
-   color: #8A5B91;
+   color: rgb(66, 35, 70);
  }
  
  
@@ -151,7 +151,7 @@ html, body {
  {
    opacity: 1;
    transform: rotate(45deg) translate(-0.125rem, -0.0625rem);
-   background: #3d3d3d;
+   background: #eeeeee;
  }
  
  /*
@@ -183,7 +183,8 @@ html, body {
    padding: 3.125rem;
    padding-top: 7.8125rem;
    
-   background: #7E6A81;
+   background: rgb(66, 35, 70);
+   box-shadow: 5px 6px 8px 1px; 
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -198,7 +199,7 @@ html, body {
  {
    padding: 0.625rem 0;
    font-size: 1.375rem;
-   color: #242424;
+   color: #eeeeee;
  }
  
  /*
@@ -223,7 +224,7 @@ html, body {
   position: absolute;
   bottom: 4%;
   left: 4%;
-  border: 0.25rem solid #7E6A81;
+  border: 0.25rem solid rgb(66, 35, 70);
   height: 100%;
   width: 100%;
 }
@@ -288,15 +289,15 @@ figcaption {
 	}
 	
 	#content a {
-		color: #8A5B91; text-decoration: none;
+		color: rgb(66, 35, 70); text-decoration: none;
 	}
 		#content a:hover {
-			color: rgb(133, 81, 141);
+			color: rgb(66, 35, 70);
 		}
 	
 #content .portfolio-item {
     width: 182px; padding:6px; background: rgb(255, 255, 255); text-align: center;
-    border-color: #8A5B91;
+    border-color: rgb(66, 35, 70);
   float: left; margin: 0 7px 14px 7px;
 }
 	#content .portfolio-item p.btn {
