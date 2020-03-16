@@ -25,13 +25,6 @@ html, body {
   margin-bottom: 25px;
 }
 
-h1{
-  background: #ffffff;
-  color: #585858;
-  font-family: "Sacramento", sans-serif;
-  font-size: 2.5em;
-  text-align: center;
-}
 
 .heading {
   font-size: 1.2em;
@@ -69,25 +62,22 @@ h1{
 
 article .job{
   color: #707070;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   margin: 12px 8px 8px 8px;
   padding-bottom: 5px;
   font-family: "Avenir Next", "Avenir", sans-serif;
   text-align: left;
-
 }
 
 article .date{
   color: rgb(66, 35, 70);
-  margin:10px;
-  padding-bottom: 5px;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: "Avenir Next", "Avenir", sans-serif;
   float: right;
 }
 
-.description{
+.descriptional{
   color: #707070;
   margin: 8px;
   line-height: 1.3;
@@ -206,14 +196,6 @@ article .date{
   background-color:  rgb(66, 35, 70);
   color: white;
 }
-
- 
- .title {
-  font-family: 'PT Serif', serif;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin: 12px 2px;
- }
  
  body
  {
@@ -225,6 +207,15 @@ article .date{
    text-align: center;
  }
 
+ header-nav 
+ {
+  background: #ffffff;
+  color: #585858;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+ }
+
  header 
  {
   background: #ffffff;
@@ -232,9 +223,32 @@ article .date{
   font-family: "Avenir Next", "Avenir", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  border-bottom: 2px solid  rgb(66, 35, 70);
-
  }
+
+ .title {
+  font-family: 'PT Serif', serif;
+  text-align: left;
+  margin: 1em;
+  font-size: 1.25rem;
+ }
+
+ .title-center {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  margin: 1em;
+  font-size: 1.25rem;
+ }
+
+ .smallheading 
+ {
+  background: #ffffff;
+  color: #585858;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 2px solid  rgb(66, 35, 70);
+ }
+ 
  
  #menuToggle
  {
@@ -378,3 +392,5 @@ article .date{
  {
    transform: none;
  }
+
+ 

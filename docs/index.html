@@ -9,18 +9,18 @@
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-      <div class="bar">
-      </div>
-      <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
+<body>
+    <div class="topbar">
+    </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
           <span></span>
           <span></span>
           <span></span>
           <ul id="menu">
+
             <a href="index.html"><li>Home</li></a>
-            <!--  Highlight current page with .current  -->
             <a href="about.html"><li>About</li></a>
             <a href="work.html"><li>Work</li></a>
             <a href="resume.html"><li>Resume</li></a>
@@ -30,41 +30,79 @@
       </nav>
       <header>
           <div class="header">
-          </div>
-          <h1>leonna design</h1> 
-        </header>
-       <div class="title">
-         <h1>hi, i am anna.</h1>
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+      </div>
+    </header>
+      <div class="titlehead"><h1><a href="index.html" style="text-decoration : none; color : #585858;">leonna design</a></h1>
+        </div>
+       <div class="title-center">
+         <h1>welcome to leonna design.</h1>
        </div>
+      <style>
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        </style>
+      <div class="frame-wrapper">
+ <picture>
+      <source srcset="../images/headshot_fullsize.jpg" media="(min-width:600px)">
+      <source srcset="../images/headshot.jpg">
+      <img src="../images/headshot_fullsize.jpg" alt="Anna Leong headshot">
+    </picture>
+    </div>
+       <!--<div id="wrapper">
+        <div id="hero">
+          
+         <img src="../images/headshot_fullsize.jpg" alt="Headshot of me">
+        <picture> 
+              <source media="(min-width:50em" srcset="../img/headshot_800.jpg"/>
+              <source media="(min-width:40em" srcset="../img/headshot_400.jpg"/>
+              <img src="../img/headshot_800.jpg" alt="I'm pretty">
+          </picture> -->
   <div class="paragraph">
-  <p> I am an undergraduate student studying Interactive Digital Media at Drexel University. I am passionate about you, the user, and how to make user experiences more pleasurable and seemless. 
+  <p> I am an undergraduate student studying Interactive Digital Media at Drexel University in Philadelphia, pursuing a career in UI/UX design. UI/UX is all about making interfaces more user friendly. I am passionate about you, the user, and how to make your user experiences more seamless and pleasurable.
+
   </p>
   </div>
+  <div class="link">
+    <p>
+        <a href="about.html" class="button button1">Read more</a> 
+    </p>
+</div>
   <div class="title">
-      <h1>here's some of my work...</h1>
+      <h1>my work...</h1>
   </div>
+
+  <div id="content">
   <div class="portfolio-item">
-      <img src="../images/septa_home.jpg" alt="View more info" />
-      <p class="btn">UX/UI Design</p>
+      <a href="uxdesign.html"><img src="../images/septa_home.jpg" alt="UI/UX" /></a>
+      <p class="btn"><a href="uxdesign.html">UX/UI Design</a></p>
+    </div>
+    <div class="portfolio-item">
+      <a href="illustrations.html"><img src="../images/robin_illustration.jpg" alt="Illustrations" /></a>
+      <p class="btn"><a href="illustrations.html">Illustrations</a></p>
     </div>
     
     <div class="portfolio-item">
-      <a href="#"><img src="../images/robin_illustration.jpg" alt="View more info" /></a>
-      <p class="btn"><a href="#">Illustrations</a></p>
+      <a href="archphotography.html"><img src="../images/architecture_photography.jpg" alt="Architectural Photography" /></a>
+      <p class="btn"><a href="archphotography.html">Architectural Photography</a></p>
     </div>
-    
-    <div class="portfolio-item">
-      <a href="#"><img src="../images/architecture_photography.jpg" alt="View more info" /></a>
-      <p class="btn"><a href="#">Architectural Photography</a></p>
-    </div>
-</body>
+</div>
 <div class="link">
     <p>
-        <a href="./work.html" class="button button1">See more...</a>
+        <a href="work.html" class="button button1">See more</a>
         <br>
         <br>  
     </p>
-    </div>
-<div class="bar">
+</div>
+</body>
+<div class="bottombar">
 </div>
 </html>

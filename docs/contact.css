@@ -1,126 +1,83 @@
-.form {
-    width: 400px;
-    margin:auto;
+p
+ {
+   margin: 0;
+   padding: 0;
+   background: #ffffff;
+   color: #707070;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+   text-align: center;
+
+    /* Jervo .. Hide horizontal scrollbar */
+    overflow-x: hidden; 
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 1.2em;
+  /*max-width: 20.5rem;*/
+  padding: 0rem;
+ }
+ 
+ .contactform {
+    margin:1rem;
     background: white;
-    border-radius: 3px;
-    margin-top: 5em;
-    margin-bottom: 6em;
-  }
-  
-  .btn-primary {
-    box-shadow: 0; 
-    border: none; 
-    background-color: rgb(66, 35, 70);
-    border-color: #8A5B91;
-    color: #ffffff;
-    outline: none;
-    -webkit-font-smoothing: subpixel-antialiased;
-    transition: all .5s;
-    padding: 10px 19px;
-    font-size: 17px;
-    line-height: 1.471;
-    width: 30%;
-    text-transform: uppercase;
-    margin: auto;
-    margin-top: 1.44em;
-    margin-bottom: .55em;
-    display: inherit;
-  }
-  
-  .btn-primary:hover {
-    background-color: rgb(72, 62, 99);
-  }
-  
-  .form-group {
-    position: relative;
-    opacity: 1;
-    transition: .6s;
-  }
-  
-  .input-field-icon {
-    color: #bfc9ca;
-    font-size: 18px;
-    position: absolute;
-    right: 10px;
-    bottom: 12px;
-    transition: .6s;
-  }
-  
-  .form-control {
-    transition: opacity .6s;
-    opacity: 1;
-    border: 0;
-    border-bottom: 2px solid #bdc3c7;
-    border-radius: 0;
-    background: white;
-    font-size: 15px;
-    line-height: 1.467;
-    padding: 4px;
-    height: 42px;
-    -webkit-appearance: none;
-  }
-  
-  input, textarea {
-    transition: all 800ms;
-    font-family: "Roboto";
-    resize: none;  /* removes the resize handle */
-    overflow: auto; /* removes default scrolling bars in IE */
-    outline:none; 
-    font-family:inherit; 
-    box-sizing:border-box;
-    width: 100%;
-    padding: 0px 4px;
-    color: #8A5B91;
-    margin-top: 1.25em;
-  }
-  
-  
-  .has-error input, .has-error textarea {
-    color: #e74c3c;
-    border-color: #e74c3c;
-  }
-  
-  .has-error .input-field-icon {
-    color: #e74c3c;
-  }
-  
-  .has-success input, .has-success textarea {
-    color: rgb(72, 62, 99);
-    border-color: rgb(72, 62, 99);
-  }
-  
-  .has-success .input-field-icon {
-    color: rgb(72, 62, 99);
-  }
-  
-  
-  input:focus, textarea:focus {
-    border-color:rgb(72, 62, 99);
-    color: rgb(72, 62, 99);
-  }
-  
-  input:focus + .input-field-icon {
-    color: rgb(72, 62, 99);
-  }
-  
-  textarea.form-control {
-    height: 120px;
-    transition: .6s;
-  }
-  
-  textarea.form-control:focus {
-    height: 200px;
-    border-color: rgb(72, 62, 99);
-  }
-  
-  @media (max-width: 37.5rem) {
-    .form {
-      width: 75%;
-      margin-top: 12%;
-    }
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-content: center;
   }
 
-  p {
-    margin: 0.3125rem;
-    padding: 0.3125rem;
-  }
+  input {
+    width: 50%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-bottom: 0.5rem;
+    color: #707070;
+}
+
+textarea {
+    min-height: 6rem;
+    min-width: 50%;
+    padding: 1rem .5rem;
+    max-height: 15rem;
+    max-width: 100%;
+    width: 50%;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-bottom: 0.5rem;
+    color: #707070;
+}
+
+.submit {
+  width: 15%;
+  background-color: rgb(66, 35, 70); 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.submit1 {
+  background-color: rgb(66, 35, 70);
+  color: white;
+}
+
+.submit1:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(66, 35, 70);
+}
+
+.required
+{
+    color: rgb(141, 40, 40);
+}

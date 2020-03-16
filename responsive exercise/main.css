@@ -23,6 +23,7 @@
   background-color: white; 
   color: black; 
   border: 2px solid #7E6A81;
+  align-content: center;
 }
 
 .button1:hover {
