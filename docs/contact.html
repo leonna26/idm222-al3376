@@ -20,9 +20,7 @@
           <span></span>
           <span></span>
           <ul id="menu">
-
-            <a href="index.html"><li>Home</li></a>
-            <a href="about.html"><li>About</li></a>
+            <a href="about.html"><li>Home</li></a>
             <a href="work.html"><li>Work</li></a>
             <a href="resume.html"><li>Resume</li></a>
             <a href="contact.html"><li>Contact</li></a>
@@ -32,15 +30,14 @@
       <header>
           <div class="header">
         <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Home</a></li>
             <li><a href="work.html">Work</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html" class="current">Contact</a></li>
         </ul> 
       </div>
     </header>
-      <div class="titlehead"><h1><a href="index.html" style="text-decoration : none; color : #585858;">leonna design</a></h1>
+      <div class="titlehead"><h1><a href="about.html" style="text-decoration : none; color : #585858;">leonna design</a></h1>
         </div>
        <div class="title-center">
          <h1>let's get in touch!</h1>
@@ -56,25 +53,27 @@
     <input type="hidden" name="_subject" value="Website contact" />
     <label> 
       Your name:
-      <input type="text" name="name">
+      <input type="text" name="name" required>
     </label>
-    <span class="required">*</span>
+    <span required="required" class="required">*</span>
     <br>
     <label>
       Your email:
-        <input type="email" name="_replyto">
+        <input type="email" name="_replyto" required>
     </label>
-    <span class="required">*</span>
+    <span required="required" class="required">*</span>
     <label>
         <br>
       Your message:
-        <textarea name="message"></textarea>
-            <span class="required">*</span>
+        <textarea name="message" required></textarea>
+            <span required="required" class="required">*</span>
     </label>
     <br>
     <br>
         <input class="submit submit1" type="submit" value="Send">
     </form>
+  </div>
+  <div class="bottombar">
   </div>
 </body>
 </html>

@@ -310,7 +310,12 @@ html, body {
  /* SWAP NAV MENUS 640px a.k.a 40em */
  
  @media screen and (min-width: 40em) {
-   nav {
+
+  .button {
+    align-items: center;
+  }
+  
+nav {
      display: none;
    }
 
@@ -391,7 +396,17 @@ html, body {
   /* SWAP NAV MENUS 800px a.k.a 40em */
 
   @media screen and (min-width: 50em) {
-    .titlehead {
+    #hero {
+      max-width: 50%;
+      float: left;
+  }
+  .paragraph {
+    float: right;
+    max-width: 46%;
+    margin-top: .3em;
+}
+
+  .titlehead {
       display: show;
     }
 
@@ -474,6 +489,11 @@ html, body {
  
   /* SWAP NAV MENUS 1200px a.k.a 75em */
   @media screen and (min-width: 75em) {
+    
+    .button {
+      align-items: center;
+    }
+    
     .frame-wrapper {
       display: inline-block;
       position: relative;
@@ -575,7 +595,11 @@ figcaption {
 }
 
 @media (min-width:600px) {
-.paragraph {
+.button {
+  align-items: center;
+}
+
+  .paragraph {
   font-size: 1.25rem;
 }
 #content .portfolio-item {
@@ -729,5 +753,9 @@ figcaption {
       border: 0.25rem solid rgb(66, 35, 70);
       height: 50%;
       width: 50%;
+  }
+
+  .button {
+    align-items: center;
   }
 }
