@@ -38,7 +38,7 @@ html, body {
 }
 
 .section{
-  width:70%;
+  /*width:70%;*/
   margin-bottom: 20px;
   background-color: #ffffff;
   float: left;
@@ -94,12 +94,12 @@ article .date{
 }
 
 #skills{
-  float:left;
-  width:22%;
+  /*float:left;
+  width:22%;*/
   background-color: #ffffff;
   font-family: "Avenir Next", "Avenir", sans-serif;
   padding-top: 15.5px;
-  margin: 8px 24px;
+  /*margin: 8px 24px;*/
   padding: 8px 28px;
   text-align: left;
 }
@@ -144,34 +144,6 @@ article .date{
   margin-top: 5px;
   margin-bottom: 15px;
 }
-
-
-.bar {
-  /*background-color:#7E6A81; MAIN THEME COLOR*/
-  background-color: rgb(66, 35, 70); 
-  width: 100%;
-  height: 2.625rem;
-  margin: 0;
-  z-index: 100; 
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  bottom: 0;
-}
-
-.bottombar {
-  /*background-color:#7E6A81; MAIN THEME COLOR*/
-  background-color: rgb(66, 35, 70); 
-  width: 100%;
-  height: 2.625rem;
-  margin: 0;
-  z-index: 100; 
-  bottom: 0; 
-  left: 0;
-  overflow: hidden;
-  bottom: 0;
-}
- 
  .button {
   background-color:  rgb(66, 35, 70); 
   border: none;
@@ -248,149 +220,129 @@ article .date{
   font-size: 1.2rem;
   border-bottom: 2px solid  rgb(66, 35, 70);
  }
- 
- 
- #menuToggle
- {
-   display: block;
-   position: relative;
-   top: 20px;
-   left: 20px;
-   
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: #585858;
-   
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color: #7E6A81;
- }
- 
- 
- #menuToggle input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
- }
- 
- /*
-  * Just a quick hamburger
-  */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 0.25rem;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #3d3d3d;
-   border-radius: 0.1875rem;
-   
-   z-index: 1;
-   
-   transform-origin: 0.25rem 0;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-0.125rem, -0.0625rem);
-   background: #eeeeee;
- }
- 
- /*
-  * But let's hide the middle one.
-  */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -0.0625rem);
- }
- 
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
- #menu
- {
-   position: absolute;
-   width: 18.75rem;
-   margin: -6.25rem 0 0 -3.125rem;
-   padding: 3.125rem;
-   padding-top: 7.8125rem;
-   
-   background:  rgb(66, 35, 70);
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 0.625rem 0;
-   font-size: 1.375rem;
-   color: #eeeeee;
- }
- 
- /*
-  * And let's slide it in from the left
-  */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
+
+/*600px*/
+@media screen and (min-width: 37.5em) {
+  .section {
+    width:95%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    float: left;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    text-align: left;
+    margin: 8px 6px;
+    padding: 8px 12px;
  }
 
+ #skills{
+  float:left;
+  width:95%;
+  background-color: #ffffff;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding-top: 15.5px;
+  margin: 8px 24px;
+  padding: 8px 28px;
+  text-align: left;
+} 
  
+/* SWAP NAV MENUS 640px a.k.a 40em */
+ 
+@media screen and (min-width: 40em) {
+.section {
+    width:95%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    float: left;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 12px 12px;
+ }
+
+ #skills{
+  float:left;
+  width:95%;
+  background-color: #ffffff;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding-top: 15.5px;
+  margin: 8px 24px;
+  margin-right: 8px;
+  padding: 8px 28px;
+  text-align: left;
+}
+
+  /* SWAP NAV MENUS 800px a.k.a 40em */
+
+  @media screen and (min-width: 50em) {
+    .section {
+      width:62%;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      float: left;
+      font-family: "Avenir Next", "Avenir", sans-serif;
+      text-align: left;
+      margin: 8px 10px;
+      padding: 8px 12px;
+   }
+
+   #skills{
+    float:left;
+    width:27%;
+    background-color: #ffffff;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    padding-top: 15.5px;
+    margin: 8px 24px;
+    padding: 8px 28px;
+    text-align: left;
+  }
+
+ 
+    /* SWAP NAV MENUS 1000px a.k.a 62em */
+    @media screen and (min-width: 62em) {
+      .section {
+        width:65%;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        float: left;
+        font-family: "Avenir Next", "Avenir", sans-serif;
+        text-align: left;
+        margin: 8px 10px;
+        padding: 8px 12px;
+     }
+
+     #skills{
+      float:left;
+      width:25%;
+      background-color: #ffffff;
+      font-family: "Avenir Next", "Avenir", sans-serif;
+      padding-top: 15.5px;
+      margin: 8px 24px;
+      padding: 8px 28px;
+      text-align: left;
+    }
+
+
+/* SWAP NAV MENUS 1200px a.k.a 75em */
+@media screen and (min-width: 75em) {
+   .section {
+  width:70%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  float: left;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  text-align: left;
+  margin: 8px 10px;
+  padding: 8px 12px;
+}
+
+#skills{
+float:left;
+width:22%;
+background-color: #ffffff;
+font-family: "Avenir Next", "Avenir", sans-serif;
+padding-top: 15.5px;
+margin: 8px 24px;
+padding: 8px 28px;
+text-align: left;
+}
+}
